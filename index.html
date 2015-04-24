@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fast Percent Calculator App</title>
+   <link rel="stylesheet"  href="style.css">
+   <script src="calculate.js"></script>
+</head>
+
+<body>
+
+  <div id="page-wrap">
+
+    <h2>Fast Percent Calculator App</h2> Enter the bill or any super amount: <b>€</b>
+    <input type="text" id="bill">
+    <br> Tip Percentage:
+    <input type="range" min="0" max="100" value="0" step="1" onchange="tipCalculate(this.value,'bill')" style="width:400px;">
+    <span id="slideval">0%</span>
+    <h2>Result = <span id="tip"></span></h2>
+  </div>
+</body>
+
+</html>
